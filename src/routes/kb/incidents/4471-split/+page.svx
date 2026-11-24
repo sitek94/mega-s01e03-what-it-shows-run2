@@ -33,21 +33,21 @@ view: a report the export repeats counts once, under the cause the desk files it
 row counts its reports a second time. A tenant who is not on file lands in a "needs triage" row,
 not in a problem.
 
-## 1 · The shared parser reads day-first dates month first ([#1](https://github.com/sitek94/mega-s01e03-what-it-shows/issues/1))
+## 1 · The shared parser reads day-first dates month first ([#1](https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/1))
 
 This is the bug #4471 was named for, and it covers <ProblemCount ticket={4471} problem="parser" />
 reports. Every tenant on file writes the day first, and the parser reads the month first, so
 7 April arrives as 4 July. These reports came in through the app, by email, or through the
 booking-v2 form. The count includes the one-day moves (problem 3), because the desk files them here.
 
-## 2 · The booking-v3 hint asks for month first ([#2](https://github.com/sitek94/mega-s01e03-what-it-shows/issues/2))
+## 2 · The booking-v3 hint asks for month first ([#2](https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/2))
 
 It covers <ProblemCount ticket={4471} problem="hint" /> reports, all through the booking form of
 tenants that run booking-v3. That form prints `MM/DD/YYYY` under its date field; people type what
 it asks, and the form reads the value day first. The report reads like a parser report, so the
 subject rule merged it. The fix is the hint or the form, not the parser.
 
-## 3 · Dates that move by one day ([#3](https://github.com/sitek94/mega-s01e03-what-it-shows/issues/3))
+## 3 · Dates that move by one day ([#3](https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/3))
 
 It covers <ProblemCount ticket={4471} problem="one-day" /> reports: the ones the desk itself listed
 as one-day moves in `desk-notes.json`. A Tuesday shows as Monday; one meeting lands on different

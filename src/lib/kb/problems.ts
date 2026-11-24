@@ -6,7 +6,7 @@ import { groupByCause, uniqueById, type Cause, type Report, type Tenant } from '
 
 export type Problem = Cause | 'one-day' | 'unplaced';
 
-const ISSUES = 'https://github.com/sitek94/mega-s01e03-what-it-shows/issues';
+const ISSUES = 'https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues';
 
 export const PROBLEMS: Record<Problem, { title: string; issue: number | null }> = {
   parser: { title: 'Shared date parser reads day-first dates month first', issue: 1 },

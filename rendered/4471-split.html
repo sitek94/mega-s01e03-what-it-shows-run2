@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../../_app/immutable/entry/start.w7JS8hf9.js" rel="modulepreload">
+    <link href="../../_app/immutable/entry/start.BgkBriGk.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/fruYDLqp.js" rel="modulepreload">
-		<link href="../../_app/immutable/chunks/DhYvhyjS.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/C9oAeuo8.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/Cbdj2qAo.js" rel="modulepreload">
-		<link href="../../_app/immutable/entry/app.CyyWFup9.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.Deoq0px1.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BkYfdh9H.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BD3UdjSR.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/wnmzq4eU.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/TGQFHf5e.js" rel="modulepreload">
 		<link href="../../_app/immutable/nodes/0.CCpBT1ka.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/ybC49tkz.js" rel="modulepreload">
-		<link href="../../_app/immutable/nodes/5.DvHquopw.js" rel="modulepreload">
-		<link href="../../_app/immutable/chunks/BxP7aoL_.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/5.CBwSN0jT.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CPrP44Si.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/DFPV7QJw.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/bMpqO4Su.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/iXLSwIXB.js" rel="modulepreload">
@@ -30,16 +30,16 @@ subject line (<a href="/kb/decisions/0001-dedupe-by-subject">decision 0001</a>) 
 one fix queued. Read by tenant, channel and body, they are three problems, and the queued parser
 fix closes only the first. Each now has its own ticket.</p> <aside class="warn svelte-17bri61"><!---->Closing #4471 when the parser fix ships leaves the booking-v3 hint and the one-day moves open,
 with nobody assigned to them.<!----></aside><!----> <h2>The split</h2> <p class="sum svelte-1op6c6"><strong>412</strong> reports merged into #4471
-  (15 export rows were repeats or belong elsewhere) · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>channels</th><th>intake tagged as</th><th>seen</th><th>ticket</th></tr></thead><tbody><!--[--><tr class="svelte-1op6c6"><td class="svelte-1op6c6">Shared date parser reads day-first dates month first</td><td class="svelte-1op6c6">379<!--[-1--><!--]--></td><td class="svelte-1op6c6">11</td><td class="small svelte-1op6c6">app ×204 · email ×150 · form ×25</td><td class="small svelte-1op6c6">parser ×356 · hint ×23</td><td class="small svelte-1op6c6">2026-04-01 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/sitek94/mega-s01e03-what-it-shows/issues/1">#1</a><!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6">booking-v3 form: date hint says MM/DD but the field reads day first</td><td class="svelte-1op6c6">33<!--[-1--><!--]--></td><td class="svelte-1op6c6">3</td><td class="small svelte-1op6c6">form ×33</td><td class="small svelte-1op6c6">hint ×18 · parser ×15</td><td class="small svelte-1op6c6">2026-04-17 → 2026-09-22</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/sitek94/mega-s01e03-what-it-shows/issues/2">#2</a><!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6">Invite date moves by one day (not a day/month swap)</td><td class="svelte-1op6c6">5<!--[0--><span class="small svelte-1op6c6">· also in parser</span><!--]--></td><td class="svelte-1op6c6">5</td><td class="small svelte-1op6c6">email ×3 · app ×2</td><td class="small svelte-1op6c6">parser ×5</td><td class="small svelte-1op6c6">2026-04-02 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/sitek94/mega-s01e03-what-it-shows/issues/3">#3</a><!--]--></td></tr><!--]--></tbody></table> <!--[--><p class="small svelte-1op6c6">The 5 one-day reports are counted twice: in their own row, and under <code>parser</code>, where the desk files them by tenant, as its own view
+  (15 export rows were repeats or belong elsewhere) · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>channels</th><th>intake tagged as</th><th>seen</th><th>ticket</th></tr></thead><tbody><!--[--><tr class="svelte-1op6c6"><td class="svelte-1op6c6">Shared date parser reads day-first dates month first</td><td class="svelte-1op6c6">379<!--[-1--><!--]--></td><td class="svelte-1op6c6">11</td><td class="small svelte-1op6c6">app ×204 · email ×150 · form ×25</td><td class="small svelte-1op6c6">parser ×356 · hint ×23</td><td class="small svelte-1op6c6">2026-04-01 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/1">#1</a><!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6">booking-v3 form: date hint says MM/DD but the field reads day first</td><td class="svelte-1op6c6">33<!--[-1--><!--]--></td><td class="svelte-1op6c6">3</td><td class="small svelte-1op6c6">form ×33</td><td class="small svelte-1op6c6">hint ×18 · parser ×15</td><td class="small svelte-1op6c6">2026-04-17 → 2026-09-22</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/2">#2</a><!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6">Invite date moves by one day (not a day/month swap)</td><td class="svelte-1op6c6">5<!--[0--><span class="small svelte-1op6c6">· also in parser</span><!--]--></td><td class="svelte-1op6c6">5</td><td class="small svelte-1op6c6">email ×3 · app ×2</td><td class="small svelte-1op6c6">parser ×5</td><td class="small svelte-1op6c6">2026-04-02 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/3">#3</a><!--]--></td></tr><!--]--></tbody></table> <!--[--><p class="small svelte-1op6c6">The 5 one-day reports are counted twice: in their own row, and under <code>parser</code>, where the desk files them by tenant, as its own view
     (CauseTable on #4471) counts them.</p><!--]--><!----> <p>Counts are built from <code>reports-4471.json</code> and <code>desk-notes.json</code> at render time, with the desk’s own
 view: a report the export repeats counts once, under the cause the desk files it under. The one-day
 row counts its reports a second time. A tenant who is not on file lands in a “needs triage” row,
-not in a problem.</p> <h2>1 · The shared parser reads day-first dates month first (<a href="https://github.com/sitek94/mega-s01e03-what-it-shows/issues/1" rel="nofollow">#1</a>)</h2> <p>This is the bug #4471 was named for, and it covers <strong>379</strong><!----> reports. Every tenant on file writes the day first, and the parser reads the month first, so
+not in a problem.</p> <h2>1 · The shared parser reads day-first dates month first (<a href="https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/1" rel="nofollow">#1</a>)</h2> <p>This is the bug #4471 was named for, and it covers <strong>379</strong><!----> reports. Every tenant on file writes the day first, and the parser reads the month first, so
 7 April arrives as 4 July. These reports came in through the app, by email, or through the
-booking-v2 form. The count includes the one-day moves (problem 3), because the desk files them here.</p> <h2>2 · The booking-v3 hint asks for month first (<a href="https://github.com/sitek94/mega-s01e03-what-it-shows/issues/2" rel="nofollow">#2</a>)</h2> <p>It covers <strong>33</strong><!----> reports, all through the booking form of
+booking-v2 form. The count includes the one-day moves (problem 3), because the desk files them here.</p> <h2>2 · The booking-v3 hint asks for month first (<a href="https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/2" rel="nofollow">#2</a>)</h2> <p>It covers <strong>33</strong><!----> reports, all through the booking form of
 tenants that run booking-v3. That form prints <code>MM/DD/YYYY</code> under its date field; people type what
 it asks, and the form reads the value day first. The report reads like a parser report, so the
-subject rule merged it. The fix is the hint or the form, not the parser.</p> <h2>3 · Dates that move by one day (<a href="https://github.com/sitek94/mega-s01e03-what-it-shows/issues/3" rel="nofollow">#3</a>)</h2> <p>It covers <strong>5</strong><!----> reports: the ones the desk itself listed
+subject rule merged it. The fix is the hint or the form, not the parser.</p> <h2>3 · Dates that move by one day (<a href="https://github.com/sitek94/mega-s01e03-what-it-shows-run2/issues/3" rel="nofollow">#3</a>)</h2> <p>It covers <strong>5</strong><!----> reports: the ones the desk itself listed
 as one-day moves in <code>desk-notes.json</code>. A Tuesday shows as Monday; one meeting lands on different
 days in Lisbon and Toronto. A day/month swap cannot do that. The likely cause is a time zone on the
 invite date (not confirmed). The desk files them under <code>parser</code> by tenant, so they stay counted
@@ -50,15 +50,15 @@ the tenant’s form (<code>causes.ts</code>) before merging into a big ticket.</
 			
 			<script>
 				{
-					__sveltekit_1j9gfyt = {
+					__sveltekit_hz8dsm = {
 						base: new URL("../..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../../_app/immutable/entry/start.w7JS8hf9.js"),
-						import("../../_app/immutable/entry/app.CyyWFup9.js")
+						import("../../_app/immutable/entry/start.BgkBriGk.js"),
+						import("../../_app/immutable/entry/app.Deoq0px1.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 5],
