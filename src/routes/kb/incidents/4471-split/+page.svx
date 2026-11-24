@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 split · three problems, not one'
 owner: Maciek Sitkowski
-status: open
+status: closed
 reviewed: 2026-11-24
 signature: 'v1.eyJzdWIiOiI0NDgiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5NTUxMTU1MCwiZXhwIjoxNzk1NTk3OTUwfQ.DRQryjBfttPA-9XWFB5AotZzk8KClY2z_ENmuUqdLYc'
 ---
@@ -16,12 +16,12 @@ signature: 'v1.eyJzdWIiOiI0NDgiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhd
 
 [#4471](/kb/incidents/4471) holds <ProblemCount ticket={4471} /> reports about dates, merged on
 subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject)) and marked known: one issue,
-one fix queued. Read by tenant, channel and body, they are three problems, and the queued parser
-fix closes only the first. Each now has its own ticket.
+one fix. Read by tenant, channel and body, they are three problems, and the parser fix closes only
+the first. Each has its own ticket.
 
-<Callout kind="warn">
-Closing #4471 when the parser fix ships leaves the booking-v3 hint and the one-day moves open,
-with nobody assigned to them.
+<Callout kind="note">
+Engineering update: #4471 closed on 05 Oct. <b>Parser: fixed</b> (<code>fix(dates): parse dd/mm for eu locales</code>).
+<b>Hint: won't fix</b>, because the booking-v3 form is retired. The update does not name the one-day moves.
 </Callout>
 
 ## The split
@@ -53,7 +53,7 @@ It covers <ProblemCount ticket={4471} problem="one-day" /> reports: the ones the
 as one-day moves in `desk-notes.json`. A Tuesday shows as Monday; one meeting lands on different
 days in Lisbon and Toronto. A day/month swap cannot do that. The likely cause is a time zone on the
 invite date (not confirmed). The desk files them under `parser` by tenant, so they stay counted
-there too; this row is what the queued parser fix will not close.
+there too; the parser fix does not explain them.
 
 ## What the queue shows
 
